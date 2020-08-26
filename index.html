@@ -15,14 +15,28 @@
     </header>
     <main id="main">
       <form id="survey-form" autocomplete="off">
-        <label for="name" id="name-label">Name:</label>
-        <input type="text" id="name" placeholder="Enter your name" required/>
+        <label for="name" id="name-label">Name
+          <input type="text" id="name" placeholder="Enter your name" required/>
+        </label>
+        <label for="email" id="email-label">Email
+          <input type="email" id="email" placeholder="Enter your email" required/>
+        </label>
+        <label for="number" id="number-label">Age
+          <input type="number" id="number" placeholder="Age" min="16" max="119" step="1" required/>
+        </label>
+        <label for="city">In which city are you?
+          <select id="dropdown">
+            <option value="kyiv">Kyiv</option>
+            <option value="kharkiv">Kharkiv</option>
+            <option value="donetsk">Donetsk</option>
+            <option value="odessa">Odessa</option>
+            <option value="dnipro">Dnipro</option>
+            <option value="zaporizhzhya">Zaporizhzhya</option>
+            <option value="lviv">Lviv</option>
+          </select>
+        </label>
 
-        <label for="email" id="email-label">Email:</label>
-        <input type="email" id="email" placeholder="Enter your email" required/>
-
-        <label for="number" id="number-label">Age:</label>
-        <input type="number" id="number" placeholder="Age" min="16" max="119" step="1" required/>
+        
 
         <input type="submit" id="submit" value="Send" />
       </form>
